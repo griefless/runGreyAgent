@@ -4,7 +4,6 @@
 
 [functions]
   directory = "netlify/functions"
-  node_bundler = "esbuild"
 
 # Enable Netlify AI Gateway (automatically injects Anthropic credentials)
 [build.environment]
@@ -12,7 +11,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  to = "/.netlify/functions/splat"
   status = 200
 
 [[redirects]]

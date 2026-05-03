@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PageBoost AI — Facebook Marketing Automation</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>f</text></svg>" />
+    
+    <!-- ✅ FACEBOOK SDK INITIALIZATION -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1294905135361425', // 🔴 REPLACE with your Meta App ID
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v18.0'
+        });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- ✅ END FACEBOOK SDK -->
+    
   </head>
   <body>
     <div id="root"></div>
